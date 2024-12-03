@@ -19,7 +19,12 @@ import * as MediaLibrary from "expo-media-library";
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as Haptics from "expo-haptics";
-
+// "scripts": {
+//   "start": "expo start",
+//   "android": "expo start --android",
+//   "ios": "expo start --ios",
+//   "web": "expo start --web"
+// },
 export default function App() {
   const { height, width } = useWindowDimensions();
   const [currentView, setCurrentView] = useState<"camera" | "save" | "login">(
